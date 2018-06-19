@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='./BloodRequest.ts'></script>
+    
+</head>
+<body>
+    <script>
+        function myFunction(){
+        let c = new DonationRequest('Test',1,'MIOT', new Date());
+        // simulate input summation from two textboxes for example
+        console.log(c._title); //Uncaught ReferenceError: Calc is not defined
+        document.getElementById("myDIV").innerHTML=c;
+       
+        }
+    </script>
+    <div id="myDIV" onclick="myFunction()">
+    I am a DIV element Click here to get class info
+    </div>
+</body>
+</html>
